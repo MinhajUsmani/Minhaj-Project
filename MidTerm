@@ -1,0 +1,35 @@
+echo
+echo " Welcome to My Reconnaissance Project Scripts Created by Minhaj Ahmed Usmani"
+echo
+echo "Below Mention Reconnaissance Tools Run in Series"
+echo
+echo nslookup
+echo Dig
+echo Whois
+echo Sublist3r
+echo theHarvester
+echo nmap
+echo
+echo "User Input eg Write Valid Domain Name"
+read n
+echo
+nslookup $n 
+echo
+echo "nslookup Tool Result"
+echo
+dig $n
+echo 
+echo "DIG Tool Result"
+echo
+whois $n
+echo "Whois Tool result"
+echo
+sublist3r -d $n -o domainfile.txt
+echo
+echo "Sublist3r Tool Result"
+echo
+theHarvester -d $n -l 500 -b all
+echo
+echo "therharvester tool Result"
+nmap $n
+echo "open port state and OS Resul
